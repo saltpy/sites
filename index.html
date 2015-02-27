@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  /* Palette
+    cornflower #93CCEA;
+    darkgrey #666666;
+    white #FFF;
+    porcelin #f2f2e8; 
+  */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding-top: 500px;
+  }
+
+  header {
+    height: 550px;
+    padding-top: 0px;
+    background: #93CCEA;
+  }
+
+  .thin-border-ddd {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+
+  .fix-height-250 {
+    height: 250px;
+  }
+
+  .main-nav,
+  .main {
+    position: relative;
+  }
+
+  .main-nav {
+    background: #fff;
+    height: 50px;
+    z-index: 150;
+    margin-bottom: -50px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.4);
+  }
+
+  header,
+  .main-nav-scrolled {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  .main {
+    background: #f2f2e8;
+    padding: 50px 50px 50px;
+    column-count: 2;
+    column-gap: 40px;
+  }
+
+  .navbar {
+    text-align: center;
+  }
+
+  .featurette {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-bottom: 1px solid #000;
+  }
+
+  .featurette h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .featurette p {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+
+  .featured {
+    background: #93CCEA;
+  }
+
+  .significant {
+    background: #FFF;
+  }
+
+  .values {
+    height: 280px;
+  }
+
+  .values .glyphicon { 
+    font-size: 80px;
+    text-align: center;
+    line-height: 80px;
+    display: block;
+    padding-bottom: 20px;
+  }
+  
+  .values h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .values p {
+    text-align: center;
+  }
+
+  .prices {
+    height: 300px;
+  }
+
+  .prices h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .prices h3 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .prices span {
+    padding-bottom: 5px;
+  }
+
+  .carousel {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+
+  .carousel-caption-container {
+    background: #666666 center center;
+    background-size: cover;
+    height: 300px;
+  }
+
+  .thin-black-border {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+
+  .carousel-caption-container .carousel-caption {
+    font-color: #000;
+  }
+  </style>
+  <title>TORG Consulting</title>
+</head>
+<body>
+<header class="featurette" name="mission">
+  <video width="400" height="300" controls>
+    <source src="teamVideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h1>Be a home to the best full stack consultants in the world</h1>
+  <h1>Build open source products that product developers depend on</h1>
+</header>
+<nav class="main-nav navbar navbar-default">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+    </a>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#mission"><b>TORG Consulting</b></a>
+        <li><a href="http://thetestpeople.com">A TTP Team</a></li>
+        <li><a href="#values">Values</a></li>
+        <li><a href="#technology">Approach</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#successes">Successes</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="main">
+  <div class="featurette" name="values">
+    <div class="container-fluid">
+      <div class="row">
+        <h1>Values</h1>
+        <p>In our experience great consulting is underpinned by some critical values. Our people live and breathe these values day in day out. When we work for you this is the heart of what you get.</p>
+      </div>
+      <div class="row">
+        <div class="values significant col-sm-4">
+          <h2>Service</h2>
+          <span class="glyphicon glyphicon-briefcase"></span>
+          <p>Our primary function is to serve our clients and staff</p>
+        </div>
+        <div class="values significant col-sm-4">
+          <h2>Joy</h2>
+          <span class="glyphicon glyphicon-gift"></span>
+          <p>Working with us and for us puts a smile on your face</p>
+        </div>
+        <div class="values significant col-sm-4">
+          <h2>Innovation</h2>
+          <span class="glyphicon glyphicon-eye-open"></span>
+          <p>We believe there is a better solution and we won't rest until we find it</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="featurette" name="approach">
+    <div class="container-fluid">
+      <h1>Approach</h1>
+      <p>Our four step approach focuses on getting the right things done the right way by making decisions at the last responsible moment.</p>
+      <div class="row">
+        <ul id="tabs" data-tabs="tabs" class="nav nav-tabs nav-justified">
+          <li class="active"><a href="#discover-tab" data-toggle="tab">Discover</a></li>
+          <li><a href="#propose-tab" data-toggle="tab">Propose</a></li>
+          <li><a href="#orient-tab" data-toggle="tab">Orient</a></li>
+          <li><a href="#iterate-tab" data-toggle="tab">Iterate</a></li>
+        </ul>
+        <div class="tab-content significant thin-border-ddd">
+          <div class="tab-pane active" id="discover-tab">
+            <p>It's hard to overstate the importance of locating the value proposition. We can start with something as simple as "Save our testers some time" or "Help us get this over the line". We end up with a position of shared understanding that makes everyone feel more confident that your problems are being solved.</p>
+            <p>This phase is completely free and we aim to complete within five elapsed working days of our first contact. We are happy to sign reasonable NDA's at this point and always act with professional confidentiality.</p>
+          </div>
+        </div>
+        <div class="tab-content significant thin-border-ddd">
+          <div class="tab-pane" id="propose-tab">
+            <p>We generate a proposal covering: (1) the value proposition, (2) our operating context including Engagement Model patterns, terms and conditions and a high level scope and (3) key financials. There are a couple of other odds and ends as well. Our proposals are straightforward, as formal legal documents go, but there can be an amount of back and forth to make sure everything is as it should be.</p>
+            <p>This phase is completely free and we aim to complete within ten elapsed working days of our first contact. If you walk away at this point you are free to use the high level scope and value proposition discovered, though the document itself remains proprietary and confidential.</p>
+          </div>
+        </div>
+        <div class="tab-content significant thin-border-ddd">
+          <div class="tab-pane" id="orient-tab">
+            <p>The orient step is the most challenging on most engagements. It needs to result in: (1) a clear prioritised list of work items, (2) the team having credentials and the like for all relevent systems, (3) building up a resonable amount of domain knowledge and (4) getting to know the key stakeholders well. If these things cannot be achieved we do not just plough on with the next step. Instead we provide a list of outstanding barriers. Only when these barriers are removed do we advance to the next step.</p>
+            <p>This phase is priced at 2/3 the cost of an iteration. This is because while it is valuable if the engagement begins it can be the case that barriers prevent engagement within an effective timeline. This increased risk means a lower cost to the client. We will always complete this step in 10 working days starting from an agreed date.</p>
+          </div> 
+        </div>
+        <div class="tab-content significant thin-border-ddd">
+          <div class="tab-pane" id="iterate-tab">
+            <p>The four weeks or so spent to this point have had three key effects: (1) producing a clear set of concrete tasks that are important to the client, (2) a solid financial and contractual position that allows everyone to focus on getting the job done and (3) a good raport between the team and the key stakeholders. This sets us up to do what we are best at - delivering value to you.</p>
+            <p>Each iteration lasts 10 working days and produces valuable work. These continue until the client feels a point of diminishing returns has been reached.</p>
+          </div>
+        </div>
+      </div>
+      <p style="padding-top:10px;">This approach is based on <a href="https://github.com/saltpy/docs/theiterativeengagementmodel.pdf">The Iterative Engagement Model</a>. We will walk you through the model during the Discover step.</p>
+    </div>
+  </div>
+  <div class="featurette" name="services">
+    <h1>Services</h1>
+    <p>Our services have not been created by a marketing department but by our experiences. That makes it pretty likely there is something on this short list that you are looking for. If not give us a call - we love a new challenge.</p>
+    <div id="servicesCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#servicesCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#servicesCarousel" data-slide-to="1"></li>
+        <li data-target="#servicesCarousel" data-slide-to="2"></li>
+        <li data-target="#servicesCarousel" data-slide-to="3"></li>
+        <li data-target="#servicesCarousel" data-slide-to="4"></li>
+        <li data-target="#servicesCarousel" data-slide-to="5"></li>
+        <li data-target="#servicesCarousel" data-slide-to="6"></li>
+        <li data-target="#servicesCarousel" data-slide-to="7"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="carousel-caption-container">
+            <div class="carousel-caption">
+              <h1>Automatic Environment Management</h1>
+              <p>Get your products and people the environments they need to be effective without the overhead of a manual process</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption-container">
+            <div class="carousel-caption">
+              <h1>Automatic and Continuous Quality Gate Implementation</h1>
+              <p>Support your team in developing the product your market needs through continuous automatic feedback at critical points in each feature's lifecycle</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption-container">
+            <div class="carousel-caption">
+              <h1>Test Platform Development</h1>
+              <p>Free up your testers to attack the product forensically and creativly through a platform of easy to use and powerful tools tailored to their needs</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption-container">
+            <div class="carousel-caption">
+              <h1>Third Party Software Simulation</h1>
+              <p>Remove the cost and pain of integrating with third party software by simulation of third party services in a way easily configurable by testers, developers and performance engineers</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption-container">
+            <div class="carousel-caption">
+              <h1>Real Client Performance Testing</h1>
+              <p>Go beyond protocol performance test to understand the user experience at key load levels</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption-container">
+            <div class="carousel-caption">
+              <h1>Hardware Abstraction Platform Development</h1>
+              <p>Test physical devices before they are manufactured in a way that makes it simple to connect real devices when the time is right</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption-container">
+            <div class="carousel-caption">
+              <h1>Data Analysis and Visualisation Platform Development</h1>
+              <p>Get information out of your systems and in to the minds of your people</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-caption-container">
+            <div class="carousel-caption">
+              <h1>Automatic Legacy System Integration Testing</h1>
+              <p>Renovate critical legacy systems at lower risk by putting in a system integration quality gate without changing the source code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="javascript:void(0)" role="button" data-slide="prev" data-target="#servicesCarousel">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="javascript:void(0)" role="button" data-slide="next" data-target="#servicesCarousel">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+  <div class="featurette" name="successes">
+  </div>
+  <div class="featurette" name="pricing">
+    <div class="container-fluid">
+      <div class="row">
+        <h1>Pricing</h1>
+        <p>We price based on what you need not who we are. That means you get world class full stack consultancy no matter your budget.</p>
+        <p>Our prices are as simple, standard and competitive. We'd rather add value to your business than haggle.</p>
+      </div>
+      <div class="row">
+        <div class="prices significant col-sm-3">
+          <h2>Startup</h2>
+          <h3>&pound1,500.00</h3>
+          <span class="glyphicon glyphicon-ok"></span>    1 FTE</br>
+          <span class="glyphicon glyphicon-ok"></span>    All Core Patterns</br>
+        </div>
+        <div class="prices featured col-sm-3">
+          <h2>Standard</h2>
+          <h3>&pound6,000.00</h3>
+          <span class="glyphicon glyphicon-ok"></span>    2 - 4 FTEs</br>
+          <span class="glyphicon glyphicon-ok"></span>    All Core Patterns</br>
+          <span class="glyphicon glyphicon-ok"></span>    0 - 2 Optional Patterns</br>
+        </div>
+        <div class="prices significant col-sm-3">
+          <h2>Bespoke</h2>
+          <h3>&pound12,000.00</h3>
+          <span class="glyphicon glyphicon-ok"></span>    2 - 4 FTEs</br>
+          <span class="glyphicon glyphicon-ok"></span>    All Core Patterns</br>
+          <span class="glyphicon glyphicon-ok"></span>    Any Optional Patterns</br>
+          <span class="glyphicon glyphicon-ok"></span>    Any Technology</br>
+        </div>
+        <div class="prices significant col-sm-3">
+          <h2>Enterprise</h2>
+          <h3>&pound24,000.00</h3>
+          <span class="glyphicon glyphicon-ok"></span>    5 - 8 FTEs</br>
+          <span class="glyphicon glyphicon-ok"></span>    All Core Patterns</br>
+          <span class="glyphicon glyphicon-ok"></span>    Any Optional Patterns</br>
+          <span class="glyphicon glyphicon-ok"></span>    0 - 2 Custom Patterns</br>
+          <span class="glyphicon glyphicon-ok"></span>    Any Technology</br>
+        </div>
+      </div>
+      <div class="row" style="padding-top:10px;">
+        <p>Our Cost Review and Financial Control patterns take care of the fine tuning of costs, up or down, ensuring you don't run out of budget before you run out of requirements.</p>
+      </div>
+    </div>
+  </div>
+</div>  
+<div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+      <p class="navbar-text"><b>#:</b> +44113 320 4809<b> | e:</b> <a href="mailto:torg@thetestpeople.com?Subject=Website%20Enquiry">torg@thetestpeople.com</a> | <b>t:</b> <a href="https://twitter.com/torgttp">@torgttp</a> | <b>g:</b> <a href="https://github.com/torgttp">TorgTTP</a> | &copy James W. Salt, 2015. All rights reserved.</p>
+  </div>
+</div>
+<script type="text/javascript">
+  var mainNav = $(".main-nav");
+  var mainNavScrolled = "main-nav-scrolled";
+  var headerHeight = $("header").height();
+  $(window).scroll(function () {
+    if($(this).scrollTop() > headerHeight) {
+      mainNav.addClass(mainNavScrolled);
+    } else {
+      mainNav.removeClass(mainNavScrolled);
+    }
+  });
+  $(document).ready(function () {
+    var showTabContent = function(link) {
+      var links = $('ul.tabs a');
+      links.pop(link);
+      $(link).parent().addClass('active');
+      $(link.hash).addClass('active');
+      links.each(function () {
+        $(this.hash).removeClass('active');
+        $(this).parent().removeClass('active');
+      });
+      e.preventDefault();
+    }
+    $('ul.tabs').each(function () {
+      $(this).onClick(showTabContent);
+    });
+  });
+  </script>
+</body>
+</html>
