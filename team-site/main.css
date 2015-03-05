@@ -1,0 +1,272 @@
+/* Palette
+  cornflower #93CCEA;
+  darkgrey #777;
+  black: #000;
+  lightgrey: #ddd;
+  white #fff;
+  porcelin #f2f2e8; 
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 700px;
+}
+
+body h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #000;
+}
+
+body h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.spacer {
+  min-height: 20px;
+  min-width: 20px;
+}
+
+.thin-border-lightgrey {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.thin-border-darkgrey {
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  border-left: 1px solid #777;
+  border-right: 1px solid #777;
+}
+
+.thin-border-black {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+html, body, .blog.container, .blog .blog-content, .blog .blog-nav {
+  height: 100%;
+}
+
+.blog *:before,
+.blog *:after {
+  display: none;
+}
+
+.blog.container-fluid:before {
+  content: '';
+  display: block;
+  float: left;
+  height: 100%;
+}
+
+.blog.fill {
+  position: relative;
+}
+
+.blog.fill:after {
+  content: '';
+  display: block;
+  clear: left;
+}
+
+.blog .wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-heading {
+  padding-top: 50px;
+  color: #fff;
+  text-shadow: 1px 1px 0px #777;
+}
+
+.padding-tiny {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.post {
+  min-height: 500px;
+  padding-bottom: 50px;
+}
+
+.post h2 {
+  text-align: left;
+  padding-bottom: 0px;
+}
+
+.post h3 {
+  text-align: left;
+  padding-top: 0px;
+  font-size: 14px;
+}
+
+.post-content p {
+  text-align: left;
+  font-size: 14px;
+}
+
+.post-content h4 {
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.blog-nav {
+  position: static;
+  padding-top: 50px;
+}
+
+.blog-content {
+  position: static;
+  float: left;
+  overflow: auto
+}
+
+.cornflower-text {
+  color: #93CCEA;
+}
+
+.padding-small {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.padding-medium {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.big {
+  font-size: 80px;
+  text-align: center;
+  line-height: 80px;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.main-nav,
+.main {
+  position: relative;
+}
+
+.page-nav {
+  height: 50px;
+  z-index: 150;
+  height: 50px;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+.main-nav {
+  height: 50px;
+  z-index: 150;
+  margin-bottom: -50px;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+header,
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.info-box {
+  min-height: 300px;
+  font-size: 16px;
+}
+
+.info-box p {
+  text-align: left;
+}
+
+.info-bar {
+  min-height: 300px;
+  font-size: 16px;
+}
+
+.info-bar p {
+  text-align: left;
+}
+
+.main {
+  column-count: 2;
+  column-gap: 40px;
+}
+
+.large-featurette {
+  min-height: 700px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.featurette {
+  min-height: 500px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.featured {
+  background: #93CCEA;
+  color: #000;
+  text-align: center;
+}
+
+.featured a:link {
+  color: #fff;
+}
+
+.featured small {
+  color: #000;
+}
+
+.significant {
+  background: #fff;
+  color: #777;
+  text-align: center;
+}
+
+.standard {
+  background: #f2f2e8;
+  color: #777;
+  text-align: center;
+}
+
+.carousel {
+  width: 889px;
+  margin: 0 auto;
+}
+
+.carousel-caption-container {
+  background: #666 center center;
+  background-size: cover;
+  height: 500px;
+}
+
+.carousel-caption-container h1 {
+  color: #fff;
+}
+
+.gist-code-container {
+  text-align: left;
+}
+</style>
+
