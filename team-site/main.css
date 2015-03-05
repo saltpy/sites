@@ -52,6 +52,16 @@ body h2 {
   border-right: 1px solid #000;
 }
 
+.row-same-height {
+  display: table;
+  width: 100%;
+}
+
+.col-md-height {
+  display: table-cell;
+  float: none !important;
+}
+
 html, body, .blog.container, .blog .blog-content, .blog .blog-nav {
   height: 100%;
 }
@@ -139,6 +149,54 @@ html, body, .blog.container, .blog .blog-content, .blog .blog-nav {
 
 .cornflower-text {
   color: #93CCEA;
+}
+
+.white-text * {
+  color: #fff !important;
+}
+
+.black-text {
+  color: #000 !important;
+}
+
+.btn-white {
+  color: #000;
+  background-color: #fff;
+  border-color: #777;
+}
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.open > .dropdown-toggle.btn-white {
+  color: #000;
+  background-color: #f2f2e8;
+  border-color: #777;
+}
+
+.btn-white:active,
+.open > .dropdown-toggle.btn-white {
+  background-image: none;
+}
+
+.btn-cornflower {
+  color: #fff;
+  background-color: #93CCEA;
+  border-color: #ddd;
+}
+
+.btn-cornflower:hover,
+.btn-cornflower:focus,
+.btn-cornflower:active,
+.open > .dropdown-toggle.btn-cornflower {
+  color: #000;
+  background-color: #f2f2e8;
+  border-color: #777;
+}
+
+.small-text * {
+  font-size: 16px;
+  text-align: left;
 }
 
 .padding-small {
