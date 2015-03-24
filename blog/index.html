@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/main.css">
@@ -20,30 +20,24 @@
       }
     });
   </script>
-  <script src='//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML'></script>
+  <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML'></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/languages/python.min.js"></script>
 
-  <title>TORG Consulting</title>
+  <title>TORG Blog</title>
 </head>
 <body class="standard" style="padding: 0">
-<nav class="navbar navbar-default navbar-fixed-top page-nav significant">
+<nav class="navbar navbar-default navbar-fixed-top page-nav standard">
   <div class="container-fluid">
     <a class="navbar-brand" href="http://thetestpeople.com">
       <img width="22" height="22" src="http://thetestpeople.com/images/favicon.png"></img>
     </a>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="/"><b>TORG Consulting</b></a>
-        <li><a href="/#values">Values</a></li>
-        <li><a href="/#approach">Approach</a></li>
-        <li><a href="/#services">Services</a></li>
-        <li><a href="/#products">Products</a></li>
-        <li><a href="/#successes">Successes</a></li>
-        <li><a href="/#pricing">Pricing</a></li>
-        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/"><b>Technical Operations and Research Group</b></a></li>
+        <li><a href="http://thetestpeople.com"><b>The Test People</b></a></li>
       </ul>
     </div>
   </div>
@@ -69,11 +63,10 @@
   </div>
 </div>
 <script type="text/javascript">
-  var title = '<h1 class=\"blog-heading\">From the Minds of TORG<\/h1>'; 
   $(document).ready(function () {
     $('.blog-nav button').click(function () {
       $.get($(this).attr('gist-link')).done(function (data) {
-        $('.blog-content').html(title + data);
+        $('.blog-content').html(data);
         $('pre code').each(function (i, block) {
           hljs.highlightBlock(block);
         });
@@ -83,7 +76,7 @@
     $('.blog-nav button:first').click();
   });
 </script>
-<div class="navbar navbar-default navbar-fixed-bottom">
+<div class="navbar navbar-default navbar-fixed-bottom standard">
   <div class="container-fluid">
     <p class="navbar-text"><a href="tel:+441133204809"><span class="glyphicon glyphicon-phone-alt"></span></a> | <a href="mailto:torg@thetestpeople.com?Subject=Website%20Enquiry"><span class="glyphicon glyphicon-envelope"></span></a> | &copy James W. Salt, 2015. All rights reserved.</p>
   </div>
